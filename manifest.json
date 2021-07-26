@@ -1,0 +1,22 @@
+{
+    "manifest_version":2,
+    "name":"Extension hide facebook ads on sitebar",
+    "version":"1.0",
+    "description": "Extension hide facebook ads on sitebar",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "author": "nghiahsgs",
+    "content_scripts":[
+        {
+            "matches":[
+                "http://www.facebook.com/*",
+                "https://www.facebook.com/*"
+            ],
+            "js":["jquery.min.js","content.js"]
+        }
+    ]
+
+}
